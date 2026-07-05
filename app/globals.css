@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 214 50% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 214 50% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 50% 12%;
+    --primary: 214 50% 12%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 138 32% 27%;
+    --secondary-foreground: 40 20% 97%;
+    --muted: 40 15% 93%;
+    --muted-foreground: 214 20% 45%;
+    --accent: 37 42% 60%;
+    --accent-foreground: 214 50% 12%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 37 42% 60%;
+    --radius: 0.5rem;
+
+    --navy: #0F1C2E;
+    --green: #2E5A3E;
+    --gold: #C5A46E;
+    --cream: #F8F7F4;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#F8F7F4] text-[#0F1C2E];
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-playfair), 'Georgia', serif;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair), 'Georgia', serif;
+  }
+  .font-geist {
+    font-family: var(--font-geist), 'Inter', sans-serif;
+  }
+  .text-navy { color: #0F1C2E; }
+  .text-green { color: #2E5A3E; }
+  .text-gold { color: #C5A46E; }
+  .text-cream { color: #F8F7F4; }
+  .bg-navy { background-color: #0F1C2E; }
+  .bg-green { background-color: #2E5A3E; }
+  .bg-gold { background-color: #C5A46E; }
+  .bg-cream { background-color: #F8F7F4; }
+  .border-navy { border-color: #0F1C2E; }
+  .border-green { border-color: #2E5A3E; }
+  .border-gold { border-color: #C5A46E; }
+}
+
+/* ── Component layer ──────────────────────────────────────── */
+@layer components {
+  .heading-serif {
+    font-family: var(--font-playfair), Georgia, serif;
+    font-weight: 700;
+  }
+
+  .nav-link {
+    @apply text-[#4A5568] hover:text-[#0F1C2E] transition-colors duration-200 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-[#0F1C2E] text-white hover:bg-[#1E2F47] transition-colors duration-200 inline-block text-center cursor-pointer;
+  }
+
+  .btn-gold {
+    @apply bg-[#C5A46E] text-[#0F1C2E] hover:bg-[#B08B4A] transition-colors duration-200 inline-block text-center cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply border-2 border-[#0F1C2E] text-[#0F1C2E] hover:bg-[#0F1C2E] hover:text-white transition-colors duration-200 inline-block text-center cursor-pointer;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-[#E5E2D9] transition-shadow duration-200;
+  }
+
+  .trust-bar {
+    @apply bg-[#F0EDE5] text-[#4A5568];
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .area-card {
+    @apply hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .chat-bubble {
+    @apply p-4 rounded-2xl mb-3 max-w-[85%] text-sm leading-relaxed relative;
+  }
+
+  .chat-bubble-user {
+    @apply bg-[#0F1C2E] text-white ml-auto;
+  }
+
+  .chat-bubble-assistant {
+    @apply bg-white border border-[#E5E2D9] text-[#1A2A3A];
+  }
+
+  .input {
+    @apply border border-[#E5E2D9] rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#C5A46E]/40 focus:border-[#0F1C2E] transition-colors bg-white w-full;
+  }
+}
+
+/* ── Smooth scrolling ─────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A46E;
+  border-radius: 3px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: slideInRight 0.4s ease-out forwards;
+}
+
+/* Chat bubble tail */
+.chat-bubble-user::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  bottom: 8px;
+  border: 8px solid transparent;
+  border-left-color: #0F1C2E;
+  border-right: 0;
+}
+.chat-bubble-assistant::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  bottom: 8px;
+  border: 8px solid transparent;
+  border-right-color: #ffffff;
+  border-left: 0;
+}
