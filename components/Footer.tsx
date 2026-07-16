@@ -1,6 +1,7 @@
 'use client';
 
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const footerLinks = {
   Buyers: [
@@ -67,15 +68,20 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-[#C5A46E] rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="font-playfair font-bold text-[#0F1C2E] text-sm">TRM</span>
-              </div>
-              <div>
-                <div className="font-playfair text-white font-semibold text-sm">
-                  Team Robert Morris
-                </div>
-                <div className="text-[#C5A46E] text-xs">Middle Tennessee</div>
-              </div>
+              <Image
+                src="/Logo_B7.svg"
+                alt="Team Robert Morris"
+                width={40}
+                height={40}
+                className="h-10 w-10 flex-shrink-0"
+              />
+              <Image
+                src="/Logo_wordmark_white.svg"
+                alt="Team Robert Morris — Middle Tennessee Real Estate"
+                width={200}
+                height={30}
+                className="h-7 w-auto max-w-[220px] hidden sm:block"
+              />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               Trusted real estate experts helping families move smarter across

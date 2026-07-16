@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 
 const navLinks = [
@@ -44,19 +45,24 @@ export default function Header() {
           {/* Logo */}
           <button
             onClick={() => handleNavClick('#home')}
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2.5 group"
           >
-            <div className="w-10 h-10 bg-[#C5A46E] rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="font-playfair font-bold text-[#0F1C2E] text-sm leading-none">TRM</span>
-            </div>
-            <div className="text-left">
-              <div className="font-playfair text-white font-semibold text-base leading-tight group-hover:text-[#C5A46E] transition-colors">
-                Team Robert Morris
-              </div>
-              <div className="text-[#C5A46E] text-xs font-medium tracking-wide">
-                Middle Tennessee Realtors
-              </div>
-            </div>
+            <Image
+              src="/Logo_B7.svg"
+              alt="Team Robert Morris"
+              width={40}
+              height={40}
+              className="h-10 w-10 flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              priority
+            />
+            <Image
+              src="/Logo_wordmark_white.svg"
+              alt="Team Robert Morris — Middle Tennessee Real Estate"
+              width={200}
+              height={30}
+              className="h-7 w-auto max-w-[220px] hidden sm:block transition-opacity duration-300 group-hover:opacity-80"
+              priority
+            />
           </button>
 
           {/* Desktop Nav */}

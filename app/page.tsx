@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 // Type for chat messages
 interface ChatMessage {
@@ -121,13 +122,22 @@ export default function TeamRobertMorris() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E5E2D9]">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-[#0F1C2E] flex items-center justify-center">
-              <span className="text-white font-semibold text-xl tracking-tighter">RM</span>
-            </div>
-            <div>
-              <div className="font-semibold text-2xl tracking-[-0.02em] text-[#0F1C2E]">Team Robert Morris</div>
-              <div className="text-[10px] text-[#718096] -mt-1">Trusted Real Estate in Middle Tennessee</div>
-            </div>
+            <Image
+              src="/Logo_B7_dark.svg"
+              alt="Team Robert Morris"
+              width={36}
+              height={36}
+              className="h-9 w-9 flex-shrink-0"
+              priority
+            />
+            <Image
+              src="/Logo_wordmark_dark.svg"
+              alt="Team Robert Morris — Middle Tennessee Real Estate"
+              width={220}
+              height={32}
+              className="h-7 w-auto max-w-[260px] hidden sm:block"
+              priority
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -547,10 +557,20 @@ export default function TeamRobertMorris() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-y-10">
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-white/90 flex items-center justify-center">
-                <span className="text-[#0F1C2E] font-bold text-lg tracking-tighter">RM</span>
-              </div>
-              <span className="font-semibold text-white text-xl tracking-tight">Team Robert Morris</span>
+              <Image
+                src="/Logo_B7.svg"
+                alt="Team Robert Morris"
+                width={32}
+                height={32}
+                className="h-8 w-8 flex-shrink-0"
+              />
+              <Image
+                src="/Logo_wordmark_white.svg"
+                alt="Team Robert Morris — Middle Tennessee Real Estate"
+                width={200}
+                height={28}
+                className="h-6 w-auto max-w-[240px] hidden sm:block"
+              />
             </div>
             <p className="max-w-xs">Clear guidance. Trusted expertise. Helping Middle Tennessee families move with confidence since the 1980s.</p>
           </div>
