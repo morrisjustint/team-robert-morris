@@ -71,16 +71,16 @@ export default function Footer() {
               <Image
                 src="/Logo_B7.svg"
                 alt="Team Robert Morris"
-                width={40}
-                height={40}
-                className="h-10 w-10 flex-shrink-0"
+                width={44}
+                height={44}
+                className="h-11 w-11 flex-shrink-0"
               />
               <Image
                 src="/Logo_wordmark_white.svg"
                 alt="Team Robert Morris — Middle Tennessee Real Estate"
-                width={200}
-                height={30}
-                className="h-7 w-auto max-w-[220px] hidden sm:block"
+                width={300}
+                height={80}
+                className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[320px] hidden sm:block"
               />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6">

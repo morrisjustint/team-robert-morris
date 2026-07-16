@@ -45,22 +45,22 @@ export default function Header() {
           {/* Logo */}
           <button
             onClick={() => handleNavClick('#home')}
-            className="flex items-center gap-2.5 group"
+            className="flex items-center gap-3 group"
           >
             <Image
               src="/Logo_B7.svg"
               alt="Team Robert Morris"
-              width={40}
-              height={40}
-              className="h-10 w-10 flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              width={44}
+              height={44}
+              className="h-11 w-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
               priority
             />
             <Image
               src="/Logo_wordmark_white.svg"
               alt="Team Robert Morris — Middle Tennessee Real Estate"
-              width={200}
-              height={30}
-              className="h-7 w-auto max-w-[220px] hidden sm:block transition-opacity duration-300 group-hover:opacity-80"
+              width={300}
+              height={80}
+              className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[340px] hidden sm:block transition-opacity duration-300 group-hover:opacity-80"
               priority
             />
           </button>

@@ -125,17 +125,17 @@ export default function TeamRobertMorris() {
             <Image
               src="/Logo_B7_dark.svg"
               alt="Team Robert Morris"
-              width={36}
-              height={36}
-              className="h-9 w-9 flex-shrink-0"
+              width={44}
+              height={44}
+              className="h-11 w-11 flex-shrink-0"
               priority
             />
             <Image
               src="/Logo_wordmark_dark.svg"
               alt="Team Robert Morris — Middle Tennessee Real Estate"
-              width={220}
-              height={32}
-              className="h-7 w-auto max-w-[260px] hidden sm:block"
+              width={300}
+              height={80}
+              className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[360px] hidden sm:block"
               priority
             />
           </div>
@@ -560,16 +560,16 @@ export default function TeamRobertMorris() {
               <Image
                 src="/Logo_B7.svg"
                 alt="Team Robert Morris"
-                width={32}
-                height={32}
-                className="h-8 w-8 flex-shrink-0"
+                width={44}
+                height={44}
+                className="h-11 w-11 flex-shrink-0"
               />
               <Image
                 src="/Logo_wordmark_white.svg"
                 alt="Team Robert Morris — Middle Tennessee Real Estate"
-                width={200}
-                height={28}
-                className="h-6 w-auto max-w-[240px] hidden sm:block"
+                width={300}
+                height={80}
+                className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[340px] hidden sm:block"
               />
             </div>
             <p className="max-w-xs">Clear guidance. Trusted expertise. Helping Middle Tennessee families move with confidence since the 1980s.</p>
