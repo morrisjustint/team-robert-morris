@@ -121,13 +121,13 @@ export default function TeamRobertMorris() {
       {/* Sticky Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E5E2D9]">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             <Image
               src="/Logo_B7_dark.svg"
               alt="Team Robert Morris"
               width={44}
               height={44}
-              className="h-11 w-11 flex-shrink-0"
+              className="h-8 w-8 sm:h-10 md:h-11 flex-shrink-0"
               priority
             />
             <Image
@@ -135,7 +135,7 @@ export default function TeamRobertMorris() {
               alt="Team Robert Morris — Middle Tennessee Real Estate"
               width={300}
               height={80}
-              className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[360px] hidden sm:block"
+              className="h-5 sm:h-8 md:h-10 w-auto max-w-[140px] sm:max-w-[300px] md:max-w-[360px]"
               priority
             />
           </div>
@@ -556,20 +556,20 @@ export default function TeamRobertMorris() {
       <footer className="bg-[#0F1C2E] text-white/70 py-12 text-sm">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-y-10">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-1.5 sm:gap-3 mb-4">
               <Image
                 src="/Logo_B7.svg"
                 alt="Team Robert Morris"
                 width={44}
                 height={44}
-                className="h-11 w-11 flex-shrink-0"
+                className="h-8 w-8 sm:h-10 md:h-11 flex-shrink-0"
               />
               <Image
                 src="/Logo_wordmark_white.svg"
                 alt="Team Robert Morris — Middle Tennessee Real Estate"
                 width={300}
                 height={80}
-                className="h-8 md:h-10 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[340px] hidden sm:block"
+                className="h-5 sm:h-8 md:h-10 w-auto max-w-[140px] sm:max-w-[300px] md:max-w-[340px]"
               />
             </div>
             <p className="max-w-xs">Clear guidance. Trusted expertise. Helping Middle Tennessee families move with confidence since the 1980s.</p>
