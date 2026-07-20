@@ -53,7 +53,7 @@ export default function Hero() {
             style={{ transitionDelay: '200ms' }}
           >
             Helping You{' '}
-            <span className="text-[#C5A46E]">More Smarter</span>
+            <span className="text-[#C5A46E]">Move Smarter</span>
             <br />
             Across Middle Tennessee
           </h1>
