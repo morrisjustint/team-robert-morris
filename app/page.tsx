@@ -220,7 +220,7 @@ export default function TeamRobertMorris() {
           </div>
 
           <h1 className="heading-serif text-6xl md:text-7xl leading-[1.05] tracking-[-0.03em] mb-6">
-            Helping Families Move<br />Smarter Across Middle Tennessee
+            Helping You More Smarter<br />Across Middle Tennessee
           </h1>
           <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/90 mb-10">
             Clear, honest guidance for first-time buyers, sellers, and everyone in between.<br className="hidden md:block" /> No jargon. No pressure. Just the answers you need.

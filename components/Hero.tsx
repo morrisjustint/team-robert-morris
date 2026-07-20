@@ -52,8 +52,8 @@ export default function Hero() {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            Helping Families{' '}
-            <span className="text-[#C5A46E]">Move Smarter</span>
+            Helping You{' '}
+            <span className="text-[#C5A46E]">More Smarter</span>
             <br />
             Across Middle Tennessee
           </h1>
