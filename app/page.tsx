@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import MeetTheCoreTeam from '@/components/MeetTheCoreTeam';
 
 // Type for chat messages
 interface ChatMessage {
@@ -277,6 +278,9 @@ export default function TeamRobertMorris() {
           ))}
         </div>
       </section>
+
+      {/* MEET THE CORE TEAM */}
+      <MeetTheCoreTeam />
 
       {/* FIRST-TIME HOME BUYER SPOTLIGHT - Core of Vision */}
       <section id="first-time" className="section bg-white border-y border-[#E5E2D9]">
