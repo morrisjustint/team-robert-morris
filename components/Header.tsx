@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 
-const navLinks = [
+const navLinks: { label: string; href: string }[] = [
   { label: 'Buying', href: '#journey' },
   { label: 'Selling', href: '#journey' },
   { label: 'Areas', href: '#areas' },

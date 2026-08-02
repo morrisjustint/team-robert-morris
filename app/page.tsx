@@ -143,12 +143,11 @@ export default function TeamRobertMorris() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <button onClick={() => scrollToSection('first-time')} className="nav-link cursor-pointer">First-Time Buyers</button>
             <button onClick={() => scrollToSection('buyer-resources')} className="nav-link cursor-pointer">Buying</button>
             <button onClick={() => scrollToSection('seller-resources')} className="nav-link cursor-pointer">Selling</button>
             <button onClick={() => scrollToSection('areas')} className="nav-link cursor-pointer">Areas</button>
             <button onClick={() => scrollToSection('resources')} className="nav-link cursor-pointer">Resources</button>
-            <button onClick={() => scrollToSection('testimonials')} className="nav-link cursor-pointer">Stories</button>
+            <button onClick={() => window.location.href = '/team'} className="nav-link cursor-pointer">Our Team</button>
             <button
               onClick={() => scrollToSection('contact')}
               className="btn-primary px-6 py-2.5 rounded-full text-sm font-semibold"
@@ -173,14 +172,14 @@ export default function TeamRobertMorris() {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t bg-white px-6 py-6 flex flex-col gap-4 text-base font-medium">
             {[
-              { label: "First-Time Buyers", id: "first-time" },
               { label: "Buying", id: "buyer-resources" },
               { label: "Selling", id: "seller-resources" },
-              { label: "Explore Areas", id: "areas" },
-              { label: "Resources & Guides", id: "resources" },
-              { label: "Contact Our Team", id: "contact" },
+              { label: "Areas", id: "areas" },
+              { label: "Resources", id: "resources" },
+              { label: "Our Team", id: "/team" },
+              { label: "Contact", id: "contact" },
             ].map((item) => (
-              <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-left py-1">
+              <button key={item.id} onClick={() => item.id.startsWith('/') ? window.location.href = item.id : scrollToSection(item.id)} className="text-left py-1">
                 {item.label}
               </button>
             ))}
