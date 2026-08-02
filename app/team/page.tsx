@@ -22,7 +22,7 @@ const team: TeamMember[] = [
       'A dedicated educator and instructor, Robert is committed to continued education and promoting homeownership. He has received Realtor® of the Year (2000) and Tennessee Realtor® Educator of the Year honors (1995 and 2021). He has held leadership roles including President of the Middle Tennessee Association of REALTORS®, NAR Director, and positions with the Real Estate Business Institute (REBI) and other national councils.',
       'An international speaker, certified instructor, and consultant, Robert teaches courses on business planning, brokerage management, leadership, professional standards, fair housing, ethics, and more. He has trained thousands of REALTORS® across the U.S., Canada, and beyond through REBI, REBAC, WCR, NAR, and other organizations, helping raise professional standards in the industry.',
     ],
-    photo: '/images/Robert_Morris.jpg',
+    photo: '/images/robert_morris_square.jpg',
   },
   {
     name: 'Justin Morris',
@@ -55,7 +55,7 @@ const team: TeamMember[] = [
       'Kaelyn Thomas is a native of Murfreesboro, TN. She obtained her undergraduate degree from MTSU and UT Knoxville. She also obtained her Masters in Public Health from Chamberlain University. She prides herself on leading with integrity, honesty, and a passion for helping others achieve homeownership and is committed to guiding buyers and sellers through every transaction efficiently, ensuring client happiness and satisfaction remain as a top priority.',
       'When Kaelyn is not assisting buyers and sellers, she enjoys spending time with family and friends, home design, and baking.',
     ],
-    photo: '/images/Kaelyn_Thomas.png',
+    photo: '/images/kaelyn_thomas_square_1000.jpg',
   },
   {
     name: 'Deborah Morris',
