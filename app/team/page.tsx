@@ -22,8 +22,7 @@ const team: TeamMember[] = [
       'A dedicated educator and instructor, Robert is committed to continued education and promoting homeownership. He has received Realtor® of the Year (2000) and Tennessee Realtor® Educator of the Year honors (1995 and 2021). He has held leadership roles including President of the Middle Tennessee Association of REALTORS®, NAR Director, and positions with the Real Estate Business Institute (REBI) and other national councils.',
       'An international speaker, certified instructor, and consultant, Robert teaches courses on business planning, brokerage management, leadership, professional standards, fair housing, ethics, and more. He has trained thousands of REALTORS® across the U.S., Canada, and beyond through REBI, REBAC, WCR, NAR, and other organizations, helping raise professional standards in the industry.',
     ],
-    photo:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800',
+    photo: '/images/Robert_Morris.jpg',
   },
   {
     name: 'Justin Morris',
@@ -35,8 +34,7 @@ const team: TeamMember[] = [
       'When you work with Justin, you get clear communication, disciplined execution, and a partner who treats your home decision with the seriousness it deserves.',
       'Ready to take the next step? Let\u2019s talk.',
     ],
-    photo:
-      'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=800',
+    photo: '/images/Justin_Morris.jpg',
   },
   {
     name: 'John Hayslett',
@@ -48,8 +46,7 @@ const team: TeamMember[] = [
       'Outside of real estate, you\u2019ll find me at a game, traveling, or spending time with friends and family.',
       'Ready to buy or sell in Murfreesboro? Let\u2019s connect.',
     ],
-    photo:
-      'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800',
+    photo: '/images/John_Hayslett.jpg',
   },
   {
     name: 'Kaelyn Thomas',
@@ -58,15 +55,13 @@ const team: TeamMember[] = [
       'Kaelyn Thomas is a native of Murfreesboro, TN. She obtained her undergraduate degree from MTSU and UT Knoxville. She also obtained her Masters in Public Health from Chamberlain University. She prides herself on leading with integrity, honesty, and a passion for helping others achieve homeownership and is committed to guiding buyers and sellers through every transaction efficiently, ensuring client happiness and satisfaction remain as a top priority.',
       'When Kaelyn is not assisting buyers and sellers, she enjoys spending time with family and friends, home design, and baking.',
     ],
-    photo:
-      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800',
+    photo: '/images/Kaelyn_Thomas.png',
   },
   {
     name: 'Deborah Morris',
     role: 'Co-Founder & Client Advocate',
     bio: [],
-    photo:
-      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    photo: '/images/Deborah_Morris.jpg',
     comingSoon: true,
   },
 ];
@@ -128,7 +123,7 @@ export default function TeamPage() {
       {/* Team members */}
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          <div className="grid sm:grid-cols-2 gap-8 md:gap-10">
             {team.map((member) => (
               <article
                 key={member.name}
