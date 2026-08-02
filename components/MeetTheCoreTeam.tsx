@@ -42,13 +42,13 @@ export default function MeetTheCoreTeam() {
 
           {/* Right column - team photo placeholder */}
           <div className="order-1 md:order-2">
-            <div className="relative aspect-[4/5] md:aspect-[5/6] w-full rounded-2xl overflow-hidden shadow-xl border border-[#E5E2D9] bg-gradient-to-br from-[#E5E2D9] to-[#F0EDE5] group">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border border-[#E5E2D9] bg-gradient-to-br from-[#E5E2D9] to-[#F0EDE5] group" style={{ aspectRatio: '4/5' }}>
               <Image
                 src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Team Robert Morris — multi-generational family real estate team in professional attire"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F1C2E]/30 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 text-white">
@@ -67,13 +67,13 @@ export default function MeetTheCoreTeam() {
         <div className="mt-20 md:mt-28 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image placeholder */}
           <div>
-            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-xl border border-[#E5E2D9] bg-gradient-to-br from-[#E5E2D9] to-[#F0EDE5] group">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border border-[#E5E2D9] bg-gradient-to-br from-[#E5E2D9] to-[#F0EDE5] group" style={{ aspectRatio: '4/3' }}>
               <Image
                 src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Team Robert Morris outdoor lifestyle portrait"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
               />
             </div>
           </div>

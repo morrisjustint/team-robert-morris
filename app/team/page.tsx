@@ -129,19 +129,19 @@ export default function TeamPage() {
                 key={member.name}
                 className="flex flex-col bg-white rounded-2xl border border-[#E5E2D9] shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
               >
-                {/* Photo */}
-                <div className="relative aspect-[4/3] w-full bg-[#F0EDE5] group">
+                {/* Photo — fixed square, face-safe crop */}
+                <div className="relative w-full overflow-hidden bg-[#F0EDE5] group" style={{ height: '320px' }}>
                   <Image
                     src={member.photo}
                     alt={member.name}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                 </div>
 
                 {/* Body */}
-                <div className="flex flex-col flex-1 p-6 md:p-7">
+                <div className="flex flex-col flex-1 p-6 md:p-8">
                   <h2 className="heading-serif text-xl md:text-2xl text-[#0F1C2E] leading-tight">
                     {member.name}
                   </h2>
@@ -150,12 +150,12 @@ export default function TeamPage() {
                   </div>
 
                   {member.credentials && (
-                    <p className="text-xs text-[#6B7280] leading-relaxed mb-4 italic">
+                    <p className="text-xs text-[#6B7280] leading-relaxed mb-4 italic border-b border-[#E5E2D9] pb-4">
                       {member.credentials}
                     </p>
                   )}
 
-                  <div className="text-sm md:text-[15px] text-[#4A5568] leading-[1.7] space-y-3 flex-1">
+                  <div className="text-sm md:text-[15px] text-[#4A5568] leading-[1.75] space-y-3 flex-1">
                     {member.comingSoon ? (
                       <p className="italic text-[#9CA3AF]">
                         Bio coming soon.
