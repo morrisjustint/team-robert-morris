@@ -5,14 +5,12 @@ import Image from 'next/image';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
   { label: 'First-Time Buyers', href: '#first-time-buyers' },
   { label: 'Buying', href: '#journey' },
   { label: 'Selling', href: '#journey' },
   { label: 'Areas', href: '#areas' },
   { label: 'Resources', href: '#resources' },
-  { label: 'Who We Are', href: '#about' },
-  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Stories', href: '#testimonials' },
   { label: 'Our Team', href: '/team' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -65,18 +63,18 @@ export default function Header() {
               alt="Team Robert Morris — Middle Tennessee Real Estate"
               width={300}
               height={80}
-              className="h-5 sm:h-8 md:h-10 w-auto max-w-[140px] sm:max-w-[300px] md:max-w-[340px] transition-opacity duration-300 group-hover:opacity-80"
+              className="h-5 sm:h-8 md:h-10 w-auto max-w-[140px] sm:max-w-[260px] md:max-w-[280px] transition-opacity duration-300 group-hover:opacity-80"
               priority
             />
           </button>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-white hover:text-[#C5A46E] text-sm font-medium px-3 py-2 rounded transition-colors duration-200 whitespace-nowrap"
+                className="text-white hover:text-[#C5A46E] text-sm font-medium px-2.5 py-2 rounded transition-colors duration-200 whitespace-nowrap"
               >
                 {link.label}
               </button>
