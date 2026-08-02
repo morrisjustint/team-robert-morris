@@ -2,36 +2,72 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 
-const team = [
+type TeamMember = {
+  name: string;
+  role: string;
+  credentials?: string;
+  bio: string[];
+  photo: string;
+  comingSoon?: boolean;
+};
+
+const team: TeamMember[] = [
   {
     name: 'Robert Morris Jr.',
-    title: 'Founder & Broker — "RoMo"',
-    bio: 'A 40+ year veteran of Middle Tennessee real estate, Robert has earned Realtor® of the Year honors and Tennessee Realtor® Educator of the Year twice. A past President of the Middle Tennessee Association of REALTORS®, he blends time-tested fundamentals with modern systems to guide families and investors alike.',
-    photo: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    name: 'Deborah Morris',
-    title: 'Co-Founder & Client Advocate',
-    bio: 'Deborah brings decades of relationship-driven service to every transaction. Her warmth, attention to detail, and deep community ties make every client feel like family from the first conversation through closing day.',
-    photo: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    role: 'Founder / Team Lead',
+    credentials:
+      'ABR, ABRM, CRB, CRS, GRI, PMN, SRES, SRS, AHWD, C-RETS, e-Pro, MRP, PSA, RENE, SFR, ITI, C2EX',
+    bio: [
+      'Robert Morris has been actively involved in real estate sales, brokerage, and education since entering the industry in 1985. A graduate of Middle Tennessee State University, he is a selling broker with Onward Real Estate in Middle Tennessee, where he continues to list and sell homes with Team Robert Morris.',
+      'A dedicated educator and instructor, Robert is committed to continued education and promoting homeownership. He has received Realtor® of the Year (2000) and Tennessee Realtor® Educator of the Year honors (1995 and 2021). He has held leadership roles including President of the Middle Tennessee Association of REALTORS®, NAR Director, and positions with the Real Estate Business Institute (REBI) and other national councils.',
+      'An international speaker, certified instructor, and consultant, Robert teaches courses on business planning, brokerage management, leadership, professional standards, fair housing, ethics, and more. He has trained thousands of REALTORS® across the U.S., Canada, and beyond through REBI, REBAC, WCR, NAR, and other organizations, helping raise professional standards in the industry.',
+    ],
+    photo:
+      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     name: 'Justin Morris',
-    title: 'Lead Agent & Technology Director',
-    bio: 'Justin pairs fresh technological innovation with the family\'s legacy of leadership. From digital marketing strategy to data-driven pricing, he ensures every listing reaches the right buyer and every client gets a modern, seamless experience.',
-    photo: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=800',
+    role: 'Agent & Technology Director',
+    bio: [
+      'Justin Morris is a Murfreesboro native and Middle Tennessee State University graduate. After more than a decade leading client success, project management, and high-performing teams in the healthcare and pharmaceutical industries—managing multimillion-dollar portfolios and delivering data-driven results—he became a licensed REALTOR® in June 2026 and joined Team Robert Morris at Onward Real Estate.',
+      'Justin brings a unique combination of leadership, process discipline, data & analytics, and AI-driven insight to every transaction. He focuses on first-time and move-up buyers, guiding them with the same care and strategic clarity he once applied to complex corporate clients. His goal is simple: make the dream of homeownership feel real and ensure every client knows how deeply he is invested in their success.',
+      'A Project Management Professional (PMP) and lifelong leader, Justin approaches real estate the way he approaches the game of football that he loves—full contact, high accountability, and genuine connection. Alongside his dad and siblings, the family brings over 60 years of combined real estate experience to Middle Tennessee.',
+      'When you work with Justin, you get clear communication, disciplined execution, and a partner who treats your home decision with the seriousness it deserves.',
+      'Ready to take the next step? Let\u2019s talk.',
+    ],
+    photo:
+      'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     name: 'John Hayslett',
-    title: 'Agent & Market Specialist',
-    bio: 'John\'s sharp market analysis and steady guidance make him a trusted advisor for buyers and sellers across Franklin, Brentwood, and Spring Hill. He translates complex market data into clear, confident decisions for every client.',
-    photo: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800',
+    role: 'Agent & Market Specialist',
+    bio: [
+      'Originally from Memphis, Tennessee, I learned the value of hard work, integrity, and building meaningful relationships at an early age. After attending the University of Alabama at Birmingham (UAB), I made Middle Tennessee home in 2016. In 2022, I became a REALTOR® to help individuals and families confidently navigate one of the biggest financial decisions of their lives.',
+      'As an agent serving Murfreesboro and the surrounding Middle Tennessee communities, I believe real estate is about more than buying and selling homes — it\u2019s about creating opportunities, building wealth, and helping people put down roots in the communities they love. I hold the At Home With Diversity® (AHWD) certification and the Commitment to Excellence (C2EX) endorsement through the National Association of REALTORS®, reflecting my commitment to ethical service and delivering an exceptional client experience.',
+      'My clients can count on quick communication, honest guidance, and relentless advocacy from first offer to closing day — whether you\u2019re buying your first home, upgrading, selling, or expanding your investment portfolio.',
+      'Outside of real estate, you\u2019ll find me at a game, traveling, or spending time with friends and family.',
+      'Ready to buy or sell in Murfreesboro? Let\u2019s connect.',
+    ],
+    photo:
+      'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    name: 'Kaelyn Morris',
-    title: 'Client Experience Coordinator',
-    bio: 'Kaelyn represents the next generation of the Morris family legacy. She keeps every transaction organized, communicates proactively, and ensures no detail slips through the cracks — making the journey smooth from start to finish.',
-    photo: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Kaelyn Thomas',
+    role: 'Client Experience Coordinator',
+    bio: [
+      'Kaelyn Thomas is a native of Murfreesboro, TN. She obtained her undergraduate degree from MTSU and UT Knoxville. She also obtained her Masters in Public Health from Chamberlain University. She prides herself on leading with integrity, honesty, and a passion for helping others achieve homeownership and is committed to guiding buyers and sellers through every transaction efficiently, ensuring client happiness and satisfaction remain as a top priority.',
+      'When Kaelyn is not assisting buyers and sellers, she enjoys spending time with family and friends, home design, and baking.',
+    ],
+    photo:
+      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    name: 'Deborah Morris',
+    role: 'Co-Founder & Client Advocate',
+    bio: [],
+    photo:
+      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800',
+    comingSoon: true,
   },
 ];
 
@@ -82,9 +118,9 @@ export default function TeamPage() {
             OUR PROMISE
           </div>
           <h1 className="heading-serif text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.2] tracking-[-0.02em] text-[#0F1C2E]">
-            Decades of local market mastery, combined with innovative systems, to
-            help families buy, sell, and invest with confidence in one of the
-            nation&rsquo;s strongest growth markets.
+            Our Promise: Decades of local market mastery, combined with innovative
+            systems, to help families buy, sell, and invest with confidence in one
+            of the nation&rsquo;s strongest growth markets.
           </h1>
         </div>
       </section>
@@ -92,37 +128,49 @@ export default function TeamPage() {
       {/* Team members */}
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid gap-10 md:gap-12">
-            {team.map((member, i) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+            {team.map((member) => (
               <article
                 key={member.name}
-                className={`grid md:grid-cols-12 gap-8 md:gap-12 items-center bg-white rounded-2xl border border-[#E5E2D9] p-6 md:p-10 shadow-sm hover:shadow-md transition-shadow duration-300 ${
-                  i % 2 === 1 ? 'md:[&>div:first-child]:order-2' : ''
-                }`}
+                className="flex flex-col bg-white rounded-2xl border border-[#E5E2D9] shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
               >
                 {/* Photo */}
-                <div className="md:col-span-4">
-                  <div className="relative aspect-square w-full rounded-xl overflow-hidden border border-[#E5E2D9] bg-[#F0EDE5] group">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                    />
-                  </div>
+                <div className="relative aspect-[4/3] w-full bg-[#F0EDE5] group">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  />
                 </div>
-                {/* Bio */}
-                <div className="md:col-span-8">
-                  <h2 className="heading-serif text-2xl md:text-3xl text-[#0F1C2E] mb-1">
+
+                {/* Body */}
+                <div className="flex flex-col flex-1 p-6 md:p-7">
+                  <h2 className="heading-serif text-xl md:text-2xl text-[#0F1C2E] leading-tight">
                     {member.name}
                   </h2>
-                  <div className="text-[#C5A46E] text-sm tracking-[1.5px] uppercase mb-4">
-                    {member.title}
+                  <div className="text-[#C5A46E] text-xs tracking-[1.5px] uppercase mt-1 mb-3">
+                    {member.role}
                   </div>
-                  <p className="text-lg text-[#4A5568] leading-[1.75]">
-                    {member.bio}
-                  </p>
+
+                  {member.credentials && (
+                    <p className="text-xs text-[#6B7280] leading-relaxed mb-4 italic">
+                      {member.credentials}
+                    </p>
+                  )}
+
+                  <div className="text-sm md:text-[15px] text-[#4A5568] leading-[1.7] space-y-3 flex-1">
+                    {member.comingSoon ? (
+                      <p className="italic text-[#9CA3AF]">
+                        Bio coming soon.
+                      </p>
+                    ) : (
+                      member.bio.map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))
+                    )}
+                  </div>
                 </div>
               </article>
             ))}
