@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'Resources', href: '#resources' },
   { label: 'Who We Are', href: '#about' },
   { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Our Team', href: '/team' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -28,6 +29,10 @@ export default function Header() {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
+    if (href.startsWith('/')) {
+      window.location.href = href;
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
