@@ -55,7 +55,7 @@ export default function ServiceAreaMap() {
           zoom: 9.2,
         }}
         mapboxAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/jmorris2888/cmsd9h4ng03cp01qyef4g4h2p"
+        mapStyle="mapbox://styles/mapbox/light-v11"
         style={{ width: '100%', height: 520 }}
         cooperativeGestures
       >
