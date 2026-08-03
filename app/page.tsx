@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import MeetTheCoreTeam from '@/components/MeetTheCoreTeam';
+import ServiceAreaMap from '@/components/ServiceAreaMap';
 
 // Type for chat messages
 interface ChatMessage {
@@ -376,6 +377,16 @@ export default function TeamRobertMorris() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Service Area Map */}
+          <div className="mt-14">
+            <div className="text-center mb-8">
+              <div className="uppercase tracking-[3px] text-[#C5A46E] text-sm mb-2">INTERACTIVE MAP</div>
+              <h3 className="heading-serif text-4xl tracking-[-0.02em]">Explore Our Service Areas</h3>
+              <p className="mt-3 text-white/60 max-w-lg mx-auto">Click any marker to learn more about the communities we serve across Middle Tennessee.</p>
+            </div>
+            <ServiceAreaMap />
           </div>
         </div>
       </section>
