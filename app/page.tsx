@@ -115,6 +115,16 @@ export default function TeamRobertMorris() {
     { name: "Spring Hill", desc: "Family-oriented, good schools, more affordable entry" },
     { name: "Murfreesboro", desc: "Strong growth, great downtown, solid appreciation" },
     { name: "College Grove & Beyond", desc: "Rural charm with easy access to everything" },
+    { name: "Mt. Juliet", desc: "Fast-growing community with strong schools, convenient Nashville access, and expanding amenities." },
+    { name: "Smyrna", desc: "Affordable family living with solid schools, local parks, and easy access to major employers." },
+    { name: "Lebanon", desc: "Historic downtown charm combined with steady growth and a welcoming small-town feel." },
+    { name: "La Vergne", desc: "Convenient location with good value, growing neighborhoods, and quick access to Nashville and Murfreesboro." },
+    { name: "Gallatin", desc: "Lakeside living, strong community spirit, and continued residential and commercial growth." },
+    { name: "Hendersonville", desc: "Popular family destination known for excellent schools, Old Hickory Lake, and established neighborhoods." },
+    { name: "Antioch", desc: "Diverse, well-located community offering strong value and easy access to downtown Nashville." },
+    { name: "Shelbyville", desc: "Classic small-town atmosphere with deep roots, local character, and improving housing options." },
+    { name: "Eagleville", desc: "Quiet rural setting with space to spread out while remaining close to Murfreesboro amenities." },
+    { name: "Christiana", desc: "Peaceful countryside living with larger lots and a relaxed pace just outside Murfreesboro." },
   ];
 
   return (
@@ -356,18 +366,17 @@ export default function TeamRobertMorris() {
             <p className="max-w-sm mt-4 md:mt-0 text-white/70">Honest, detailed insights on schools, costs, lifestyle, and current market trends — written in plain language.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {areas.map((area) => (
               <div key={area.name} className="area-card card bg-white text-[#1A2A3A] p-7 rounded-2xl group cursor-pointer" onClick={() => scrollToSection('contact')}>
-                <div className="font-semibold text-2xl mb-1.5 group-hover:text-[#0F1C2E]">{area.name}</div>
-                <p className="text-[#4A5568]">{area.desc}</p>
-                <div className="mt-8 text-sm text-[#C5A46E] flex items-center gap-2 group-hover:gap-3 transition-all">
+                <div className="font-semibold text-xl mb-1.5 group-hover:text-[#0F1C2E]">{area.name}</div>
+                <p className="text-[#4A5568] text-sm leading-relaxed">{area.desc}</p>
+                <div className="mt-6 text-sm text-[#C5A46E] flex items-center gap-2 group-hover:gap-3 transition-all">
                   Explore this area <span>→</span>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-center text-white/60 text-sm mt-8">More neighborhoods and detailed reports coming soon — including market trend videos.</p>
         </div>
       </section>
 
