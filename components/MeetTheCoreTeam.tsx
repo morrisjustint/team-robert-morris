@@ -23,8 +23,8 @@ export default function MeetTheCoreTeam() {
           {/* Left column - text */}
           <div className="order-2 md:order-1">
             <p className="text-lg md:text-xl text-[#4A5568] leading-[1.75] mb-8">
-              At Team Robert Morris – Onward Real Estate, we blend four decades of
-              unparalleled real estate leadership with fresh technological
+              At Team Robert Morris – Onward Real Estate, we blend 66+ years of
+              combined real estate experience with fresh technological
               innovation and family-driven commitment to client success. Serving
               Murfreesboro, Spring Hill, Nolensville, Franklin, Brentwood, College
               Grove and greater Middle Tennessee, our team delivers the trusted

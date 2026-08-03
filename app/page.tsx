@@ -216,11 +216,11 @@ export default function TeamRobertMorris() {
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-sm mb-6 tracking-[1px]">
-            MIDDLE TENNESSEE • EST. 40+ YEARS
+            MIDDLE TENNESSEE • 66+ YEARS OF COMBINED EXPERIENCE
           </div>
 
           <h1 className="heading-serif text-6xl md:text-7xl leading-[1.05] tracking-[-0.03em] mb-6">
-            Helping You Move Smarter<br />Across Middle Tennessee
+            Helping to Make Dreams Come True<br />Across Middle Tennessee
           </h1>
           <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/90 mb-10">
             Clear, honest guidance for first-time buyers, sellers, and everyone in between.<br className="hidden md:block" /> No jargon. No pressure. Just the answers you need.
@@ -250,7 +250,7 @@ export default function TeamRobertMorris() {
             <span className="font-medium">5.0 Average Rating</span>
           </div>
           <div>Hundreds of families guided</div>
-          <div>40+ years of trusted expertise</div>
+          <div>66+ years of combined real-estate experience</div>
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-[#2E5A3E]"></span>
             Code of Ethics Aligned

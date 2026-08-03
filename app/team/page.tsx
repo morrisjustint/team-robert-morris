@@ -13,7 +13,7 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   {
-    name: 'Robert Morris Jr.',
+    name: 'Robert Morris Jr. (RoMo)',
     role: 'Founder / Team Lead',
     credentials:
       'ABR, ABRM, CRB, CRS, GRI, PMN, SRES, SRS, AHWD, C-RETS, e-Pro, MRP, PSA, RENE, SFR, ITI, C2EX',
@@ -25,12 +25,22 @@ const team: TeamMember[] = [
     photo: '/images/robert_morris_square.jpg',
   },
   {
+    name: 'Deborah Morris',
+    role: 'Co-Founder & Director of Operations & Administration',
+    bio: [
+      'Deborah Morris is the Co-Founder of Team Robert Morris and serves as the Director of Operations & Administration. A dedicated partner in both life and business, Deborah has been instrumental in building the foundation of Team Robert Morris alongside her husband, Robert Morris Jr.',
+      'With a deep commitment to excellence and a heart for serving families, Deborah oversees the day-to-day operations that keep the team running smoothly. Her attention to detail, organizational leadership, and genuine care for clients ensure that every family who works with Team Robert Morris receives a seamless and personalized experience from start to finish.',
+      'Deborah\u2019s passion for helping others achieve the dream of homeownership is at the core of everything she does. She takes pride in creating an environment where clients feel valued, heard, and supported throughout their entire real estate journey.',
+    ],
+    photo: '/images/Deborah_Morris.jpg',
+  },
+  {
     name: 'Justin Morris',
-    role: 'Agent & Technology Director',
+    role: 'Buyer/Seller Consultant & Director of Technology Systems',
     bio: [
       'Justin Morris is a Murfreesboro native and Middle Tennessee State University graduate. After more than a decade leading client success, project management, and high-performing teams in the healthcare and pharmaceutical industries—managing multimillion-dollar portfolios and delivering data-driven results—he became a licensed REALTOR® in June 2026 and joined Team Robert Morris at Onward Real Estate.',
       'Justin brings a unique combination of leadership, process discipline, data & analytics, and AI-driven insight to every transaction. He focuses on first-time and move-up buyers, guiding them with the same care and strategic clarity he once applied to complex corporate clients. His goal is simple: make the dream of homeownership feel real and ensure every client knows how deeply he is invested in their success.',
-      'A Project Management Professional (PMP) and lifelong leader, Justin approaches real estate the way he approaches the game of football that he loves—full contact, high accountability, and genuine connection. Alongside his dad and siblings, the family brings over 60 years of combined real estate experience to Middle Tennessee.',
+      'A Project Management Professional (PMP) and lifelong leader, Justin approaches real estate the way he approaches the game of football that he loves—full contact, high accountability, and genuine connection. Alongside his dad and siblings, the family brings 66+ years of combined real estate experience to Middle Tennessee.',
       'When you work with Justin, you get clear communication, disciplined execution, and a partner who treats your home decision with the seriousness it deserves.',
       'Ready to take the next step? Let\u2019s talk.',
     ],
@@ -38,7 +48,8 @@ const team: TeamMember[] = [
   },
   {
     name: 'John Hayslett',
-    role: 'Agent & Market Specialist',
+    role: 'Buyer/Seller Consultant & Director of Marketing',
+    credentials: 'AHWD, C2EX',
     bio: [
       'Originally from Memphis, Tennessee, I learned the value of hard work, integrity, and building meaningful relationships at an early age. After attending the University of Alabama at Birmingham (UAB), I made Middle Tennessee home in 2016. In 2022, I became a REALTOR® to help individuals and families confidently navigate one of the biggest financial decisions of their lives.',
       'As an agent serving Murfreesboro and the surrounding Middle Tennessee communities, I believe real estate is about more than buying and selling homes — it\u2019s about creating opportunities, building wealth, and helping people put down roots in the communities they love. I hold the At Home With Diversity® (AHWD) certification and the Commitment to Excellence (C2EX) endorsement through the National Association of REALTORS®, reflecting my commitment to ethical service and delivering an exceptional client experience.',
@@ -50,19 +61,13 @@ const team: TeamMember[] = [
   },
   {
     name: 'Kaelyn Thomas',
-    role: 'Client Experience Coordinator',
+    role: 'Director of Customer Relations',
+    credentials: 'MPH, PSA',
     bio: [
       'Kaelyn Thomas is a native of Murfreesboro, TN. She obtained her undergraduate degree from MTSU and UT Knoxville. She also obtained her Masters in Public Health from Chamberlain University. She prides herself on leading with integrity, honesty, and a passion for helping others achieve homeownership and is committed to guiding buyers and sellers through every transaction efficiently, ensuring client happiness and satisfaction remain as a top priority.',
       'When Kaelyn is not assisting buyers and sellers, she enjoys spending time with family and friends, home design, and baking.',
     ],
     photo: '/images/kaelyn_thomas_square_1000.jpg',
-  },
-  {
-    name: 'Deborah Morris',
-    role: 'Co-Founder & Client Advocate',
-    bio: [],
-    photo: '/images/Deborah_Morris.jpg',
-    comingSoon: true,
   },
 ];
 
