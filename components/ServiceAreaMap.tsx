@@ -30,7 +30,10 @@ const areaLocations: AreaLocation[] = [
   { name: 'Christiana', desc: 'Peaceful countryside living with larger lots and a relaxed pace just outside Murfreesboro.', latitude: 35.6276, longitude: -86.4089 },
 ];
 
-const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+const MAPBOX_TOKEN =
+  (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_MAPBOX_ACCESS_TOKEN) ||
+  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN) ||
+  '';
 
 export default function ServiceAreaMap() {
   const [selectedArea, setSelectedArea] = useState<AreaLocation | null>(null);
@@ -47,7 +50,7 @@ export default function ServiceAreaMap() {
   }
 
   return (
-    <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+    <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-white">
       <Map
         initialViewState={{
           longitude: -86.6,
@@ -56,8 +59,12 @@ export default function ServiceAreaMap() {
         }}
         mapboxAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/mapbox/light-v11"
-        style={{ width: '100%', height: 520 }}
+        style={{ width: '100%', height: 'min(520px, 60vh)', minHeight: 350 }}
         cooperativeGestures
+        touchPitch
+        dragPan
+        scrollZoom
+        touchZoomRotate
       >
         {areaLocations.map((area) => (
           <Marker
