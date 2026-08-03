@@ -30,10 +30,7 @@ const areaLocations: AreaLocation[] = [
   { name: 'Christiana', desc: 'Peaceful countryside living with larger lots and a relaxed pace just outside Murfreesboro.', latitude: 35.6276, longitude: -86.4089 },
 ];
 
-const MAPBOX_TOKEN =
-  (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_MAPBOX_ACCESS_TOKEN) ||
-  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN) ||
-  '';
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN || '';
 
 export default function ServiceAreaMap() {
   const [selectedArea, setSelectedArea] = useState<AreaLocation | null>(null);
