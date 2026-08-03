@@ -27,10 +27,13 @@ const team: TeamMember[] = [
   {
     name: 'Deborah Morris',
     role: 'Co-Founder & Director of Operations & Administration',
+    credentials: 'BS, SRS, PSA',
     bio: [
-      'Deborah Morris is the Co-Founder of Team Robert Morris and serves as the Director of Operations & Administration. A dedicated partner in both life and business, Deborah has been instrumental in building the foundation of Team Robert Morris alongside her husband, Robert Morris Jr.',
-      'With a deep commitment to excellence and a heart for serving families, Deborah oversees the day-to-day operations that keep the team running smoothly. Her attention to detail, organizational leadership, and genuine care for clients ensure that every family who works with Team Robert Morris receives a seamless and personalized experience from start to finish.',
-      'Deborah\u2019s passion for helping others achieve the dream of homeownership is at the core of everything she does. She takes pride in creating an environment where clients feel valued, heard, and supported throughout their entire real estate journey.',
+      'Deborah Morris is a dedicated REALTOR® member of TeamRobertMorris with Onward Real Estate, proudly serving clients throughout Middle Tennessee. She is a graduate of Middle Tennessee State University, holds a Bachelor of Science degree along with the Seller Representative Specialist (SRS) designation and Pricing Strategy Advisor (PSA) certification in real estate.',
+      'Deborah assisted our veterans and their families for over 16 years with the U.S. Department of Veterans Affairs, Murfreesboro location, where she served with distinction. She continues to share her decades of experience, professionalism, and passion for helping others with achieving the goal of homeownership for buyers and sellers in real estate.',
+      'She has high integrity, and a strong commitment to personalized service while doing the right thing.',
+      'Deborah combines her extensive life experience with a client-first approach to guide and support everyone through real estate processes.',
+      'Deborah enjoys spending quality time with her family and cherishes every opportunity to be with her grandchildren.',
     ],
     photo: '/images/Deborah_Morris.jpg',
   },
@@ -64,8 +67,9 @@ const team: TeamMember[] = [
     role: 'Director of Customer Relations',
     credentials: 'MPH, PSA',
     bio: [
-      'Kaelyn Thomas is a native of Murfreesboro, TN. She obtained her undergraduate degree from MTSU and UT Knoxville. She also obtained her Masters in Public Health from Chamberlain University. She prides herself on leading with integrity, honesty, and a passion for helping others achieve homeownership and is committed to guiding buyers and sellers through every transaction efficiently, ensuring client happiness and satisfaction remain as a top priority.',
-      'When Kaelyn is not assisting buyers and sellers, she enjoys spending time with family and friends, home design, and baking.',
+      'Born and raised in Murfreesboro, Tennessee, I am proud to serve the Middle Tennessee community I have always called home. I earned my Bachelor of Science degree from Middle Tennessee State University and my Master of Public Health from Chamberlain University. I am also a certified Pricing Strategy Advisor (PSA), a designation from the National Association of REALTORS® that equips me with advanced expertise in accurately pricing properties, preparing precise Comparative Market Analyses (CMAs), and working effectively with appraisers. My education and professional training provide my clients with the knowledge, insight, and confidence they need to make informed real estate decisions.',
+      'Before beginning my career in real estate, I built a strong foundation in Human Resources, where I developed a passion for helping people navigate important life decisions with professionalism, empathy, and integrity. That same people-first approach now guides every real estate transaction. Whether assisting buyers in finding the perfect home or helping sellers maximize the value of their property, I am committed to honesty, clear communication, and exceptional service. My clients\u2019 happiness and satisfaction are always my highest priorities, and I strive to make every step of the buying or selling process as smooth and rewarding as possible.',
+      'In addition to my professional experience, I bring an extensive background in interior design and home renovation, allowing me to help clients envision a property\u2019s full potential and recognize opportunities to enhance its value. I truly enjoy sharing my knowledge of design, functionality, and market trends to help buyers find a place they love and sellers present their homes at their very best. It is an honor to help individuals and families achieve homeownership while serving the Middle Tennessee community with dedication, integrity, and genuine care.',
     ],
     photo: '/images/kaelyn_thomas_square_1000.jpg',
   },
