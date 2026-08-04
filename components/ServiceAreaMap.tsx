@@ -12,6 +12,7 @@ interface AreaLocation {
 }
 
 const areaLocations: AreaLocation[] = [
+  { name: 'Nashville', desc: 'The heart of Middle Tennessee — vibrant culture, diverse neighborhoods, and strong job markets.', latitude: 36.1627, longitude: -86.7816 },
   { name: 'Franklin', desc: 'Historic charm, top schools, vibrant downtown', latitude: 35.7917, longitude: -86.8575 },
   { name: 'Brentwood', desc: 'Premium neighborhoods, excellent schools, convenient location', latitude: 35.9984, longitude: -86.7891 },
   { name: 'Nolensville', desc: 'Growing family favorite with strong value and new construction', latitude: 35.9595, longitude: -86.6689 },
