@@ -110,12 +110,13 @@ export default function TeamRobertMorris() {
   ];
 
   const areas = [
+    { name: "Nashville", desc: "The heart of Middle Tennessee — vibrant culture, diverse neighborhoods, and strong job markets." },
     { name: "Franklin", desc: "Historic charm, top schools, vibrant downtown" },
     { name: "Brentwood", desc: "Premium neighborhoods, excellent schools, convenient location" },
     { name: "Nolensville", desc: "Growing family favorite with strong value and new construction" },
     { name: "Spring Hill", desc: "Family-oriented, good schools, more affordable entry" },
     { name: "Murfreesboro", desc: "Strong growth, great downtown, solid appreciation" },
-    { name: "College Grove & Beyond", desc: "Rural charm with easy access to everything" },
+    { name: "College Grove", desc: "Rural charm with easy access to everything" },
     { name: "Mt. Juliet", desc: "Fast-growing community with strong schools, convenient Nashville access, and expanding amenities." },
     { name: "Smyrna", desc: "Affordable family living with solid schools, local parks, and easy access to major employers." },
     { name: "Lebanon", desc: "Historic downtown charm combined with steady growth and a welcoming small-town feel." },
